@@ -111,7 +111,9 @@ namespace users_api_dotnet.Services {
         }
 
         public IEnumerable<User> GetActiveUsers() {
-            List<User> users = _database.Users.Where(u => u.RevokedOn == null)
+            List<User> users = _database.Users
+                .Where(u => u.RevokedOn == null)
+                .OrderByDescending(u => u.CreatedOn)
                 .ToList();
 
             return users;
