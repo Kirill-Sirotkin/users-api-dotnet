@@ -24,7 +24,8 @@ namespace users_api_dotnet.Entities {
             string name, 
             int gender, 
             DateTime? birthday, 
-            bool admin
+            bool admin,
+            string editor
         ) {
             Guid = Guid.NewGuid();
             Login = login;
@@ -34,9 +35,9 @@ namespace users_api_dotnet.Entities {
             Birthday = birthday;
             Admin = admin;
             CreatedOn = DateTime.UtcNow;
-            CreatedBy = login;
+            CreatedBy = editor;
             ModifiedOn = DateTime.UtcNow;
-            ModifiedBy = login;
+            ModifiedBy = editor;
         }
     }
 }
