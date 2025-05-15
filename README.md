@@ -33,7 +33,7 @@ This project aims to provide a backend API to manage a User entity
     ```
     DATABASE_URL="Host=YOUR_HOST;Port=YOUR_PORT;Username=YOUR_USERNAME;Password=YOUR_PASSWORD;Database=usersApi"
     ```
-    - ```JWT_SECRET``` - key to sign the JWTs. Make sure the secret string is fairly long, as the cryptography algorithm demands that (for exmaple, 120 characters).
+    - ```JWT_SECRET``` - key to sign the JWTs. Make sure the secret string is fairly long, as the cryptography algorithm demands that (for example, 120 characters).
     ```
     JWT_SECRET="YOUR_LONG_SECRET_STRING"
     ```
